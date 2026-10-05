@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNAngeluS</title>
+<meta name="description" content="DNAngeluS, the developer alias of Lucio Moya Farina. Small tools, sharp edges: graphics, automation and finance data.">
+<meta name="theme-color" content="#07080d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="assets/dna.css">
+<style>
+:root{--bg:#07080d;--surface:#0d1018;--surface-2:#141826;--border:#232a3d;--border-strong:#5a6690;--ink:#e6ecff;--ink-muted:#8b95b8;--cyan:#22e5ff;--cyan-dim:#1596ab;--cyan-glow:#22e5ff59;--magenta:#ff2bd6;--magenta-dim:#b01c95;--magenta-glow:#ff2bd659;--on-cyan:#05060a;--on-magenta:#05060a;--success:#5cffb0;--warning:#ffc247;--danger:#ff5470;--font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;--font-sans:"Space Grotesk",system-ui,-apple-system,sans-serif;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-10:40px;--space-16:64px;--radius-sm:2px;--radius-md:6px;--radius-lg:12px;--glow-cyan:0 0 24px 0 #22e5ff59;--glow-magenta:0 0 24px 0 #ff2bd659}
+html{background:var(--bg)}
+body{margin:0!important;padding:0!important;background:var(--bg);color:var(--ink)}
+a{color:inherit}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="background: var(--bg); color: var(--ink); font-family: var(--font-sans); min-height: 100%;">
+<div style="max-width: 1120px; margin: 0 auto; padding: 0 24px; box-sizing: border-box;">
+
+<nav class="dna-nav" style="flex-wrap: wrap; gap: 12px;">
+<span class="dna-wordmark" style="font-size: 20px;"><span class="halo">DNA</span>ngelu<span class="end">S</span></span>
+<span style="display: flex; flex-wrap: wrap; gap: 4px 0;">
+<a href="#projects">projects</a>
+<a href="#about">about</a>
+<a href="#contact">contact</a>
+<a href="https://github.com/DNAngeluS">github ↗</a>
+</span>
+</nav>
+
+<section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; padding: 64px 0 56px;">
+<div style="flex: 1 1 460px; min-width: 0;">
+<span class="dna-tag">~/dnangelus.ar</span>
+<h1 style="margin: 16px 0; font: 700 64px/68px var(--font-mono); letter-spacing: -0.02em; color: var(--ink);">Small tools.<br><span style="color: var(--cyan);">Sharp</span> edges.</h1>
+<p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 29px; color: var(--ink-muted);">I build tools that bite back. Free-time experiments in graphics, automation and finance data, shipped and broken in public. Architect by day at Khem Labs, tinkerer by night.</p>
+<div class="dna-row" style="margin-top: 32px;">
+<a class="dna-btn dna-btn-primary" href="#projects">$ view --projects</a>
+<a class="dna-btn dna-btn-secondary" href="https://github.com/DNAngeluS">github ↗</a>
+</div>
+</div>
+<div style="flex: 1 1 360px; min-width: 0;">
+<div class="dna-term" style="max-width: none;">
+<div class="dna-term-bar"><i></i><i></i><i></i><span>~/whoami</span></div>
+<div class="dna-term-body">
+<div><span class="p">$</span> whoami</div>
+<div class="m">lucio moya farina, aka DNAngeluS</div>
+<div><span class="p">$</span> cat roles.txt</div>
+<div class="m">founder @ khem labs</div>
+<div class="m">builder of small, sharp things</div>
+<div><span class="p">$</span> pwd</div>
+<div class="a">/buenos-aires</div>
+<div><span class="p">$</span> <span class="dna-cursor"></span></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="dna-helix" role="separator"></div>
+
+<section id="projects" style="padding-top: 64px;">
+<h2 class="dna-section">projects</h2>
+<p style="margin: 12px 0 24px; max-width: 560px; color: var(--ink-muted);">Six repos worth opening, picked from 31 public ones: a live yield-curve tracker, a style-training pipeline, a game jam entry and a 2009 distributed crawler.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>curvar</h3><span class="dna-badge dna-badge-shipped">SHIPPED</span></div>
+<p>The peso yield curve, no fluff. LECAP, BONCAP, CER and TAMAR bonds, refreshed every weekday by a scheduled workflow.</p>
+<div class="dna-card-tags"><span class="dna-tag">javascript</span><span class="dna-tag">github actions</span><span class="dna-tag">pages</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/curvar">repo ↗</a><a class="dna-link" href="https://dnangelus.ar/curvar/">demo ↗</a></div>
+</article>
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>nocturne_aegis_cel</h3><span class="dna-badge dna-badge-wip">WIP</span></div>
+<p>An original anime style built from scratch: generate candidates in Colab, audit them, then train a LoRA on the survivors.</p>
+<div class="dna-card-tags"><span class="dna-tag">sdxl</span><span class="dna-tag">lora</span><span class="dna-tag">colab</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/nocturne_aegis_cel">repo ↗</a></div>
+</article>
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>CryShooter</h3><span class="dna-badge dna-badge-wip">WIP</span></div>
+<p>A first-person shooter plugin for CRYENGINE 5.6 in C++: player controller, shooting, spawn points, built on Linux.</p>
+<div class="dna-card-tags"><span class="dna-tag">c++</span><span class="dna-tag">cryengine</span><span class="dna-tag">cmake</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/CryShooter">repo ↗</a></div>
+</article>
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>mmggj2020-teamcuki</h3><span class="dna-badge dna-badge-shipped">SHIPPED</span></div>
+<p>Fixing Tron for Atari 2600: rebuild the circuit before the current runs out. A game jam entry, playable in the browser.</p>
+<div class="dna-card-tags"><span class="dna-tag">typescript</span><span class="dna-tag">phaser</span><span class="dna-tag">game jam 2020</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/mmggj2020-teamcuki">repo ↗</a><a class="dna-link" href="https://dnangelus.github.io/mmggj2020-teamcuki/">play ↗</a></div>
+</article>
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>tgc.mcompiler</h3><span class="dna-badge dna-badge-shipped">SHIPPED</span></div>
+<p>A MonoGame effects compiler in a box: dotnet, mgfxc and wine, recompiling shaders on every save.</p>
+<div class="dna-card-tags"><span class="dna-tag">docker</span><span class="dna-tag">shell</span><span class="dna-tag">monogame</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/tgc.mcompiler">repo ↗</a></div>
+</article>
+
+<article class="dna-card" style="max-width: none;">
+<div class="dna-card-head"><h3>proyectoso-fifo</h3><span class="dna-badge dna-badge-archived">ARCHIVED</span></div>
+<p>A mini Google in C: crawlers, an index and a web server talking sockets across Linux, Windows and Solaris.</p>
+<div class="dna-card-tags"><span class="dna-tag">c</span><span class="dna-tag">sockets</span><span class="dna-tag">utn 2009</span></div>
+<div class="dna-card-links"><a class="dna-link" href="https://github.com/DNAngeluS/proyectoso-fifo">repo ↗</a></div>
+</article>
+
+</div>
+</section>
+
+<section id="about" style="padding-top: 64px;">
+<h2 class="dna-section">about</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 24px; align-items: flex-start;">
+<div style="flex: 1 1 420px; min-width: 0;">
+<p style="margin: 0 0 16px; font-size: 18px; line-height: 29px;">I'm Lucio. By day I run Khem Labs, a boutique software studio in Buenos Aires. By night I'm DNAngeluS, and this is where the side projects live.</p>
+<p style="margin: 0; color: var(--ink-muted);">The work here goes from shaders and engines to data tools for the Argentine market. Nothing is polished past the point of being useful, and everything is open to read.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+<div class="dna-stat"><b>31</b><span>PUBLIC REPOS</span></div>
+<div class="dna-stat"><b>16</b><span>ORIGINAL, NOT FORKS</span></div>
+<div class="dna-stat"><b>4</b><span>ORGANIZATIONS</span></div>
+</div>
+</div>
+</section>
+
+<section id="contact" style="padding: 64px 0;">
+<h2 class="dna-section">contact</h2>
+<p style="margin: 12px 0 24px; max-width: 560px; color: var(--ink-muted);">Want a tool built, a repo reviewed or a studio on your side? Start with the code, then say hi.</p>
+<div class="dna-row">
+<a class="dna-btn dna-btn-primary" href="https://github.com/DNAngeluS">$ open github ↗</a>
+<a class="dna-btn dna-btn-secondary" href="https://twitter.com/dnangelus">twitter ↗</a>
+<a class="dna-btn dna-btn-ghost" href="https://github.com/khemlabs">khem labs ↗</a>
+</div>
+</section>
+
+<footer style="padding: 24px 0 40px; border-top: 1px solid var(--border); color: var(--ink-muted); font: 400 12px/16px var(--font-mono);">// no tracking, no cookies, no nonsense.</footer>
+
+</div>
+</div>
+</body>
+</html>
